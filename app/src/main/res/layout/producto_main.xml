@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6CDD4D"
+    android:isScrollContainer="false"
+    android:orientation="vertical"
+    android:padding="30dp"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Producto"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/et_nombreProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B5DCAB"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/et_precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B5DCAB"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/et_tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B5DCAB"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#1636D8"
+        android:text="Guardar Producto"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/btn_listarP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#1636D8"
+        android:text="Listar Producto"
+        android:textColor="@android:color/white" />
+
+    <ListView
+        android:id="@+id/lst_productos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_rpta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:visibility="gone" />
+
+</LinearLayout>

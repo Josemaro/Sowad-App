@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6CDD4D"
+    android:orientation="vertical"
+    android:padding="30dp"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Producto"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/et_nombreProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="#B5DCAB"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cantidad"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/et_cantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="#B5DCAB"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Importe Total"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/et_imptotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="#B5DCAB"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Cliente"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/et_nombreCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="#B5DCAB"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direccion"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/et_direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B5DCAB"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telefono"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/et_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B5DCAB"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Entrega"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/et_fechaEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B5DCAB"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#1636D8"
+        android:text="Guardar Delivery"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/btn_listarD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#1636D8"
+        android:text="Listar Delivery"
+        android:textColor="@android:color/white" />
+
+    <ListView
+        android:id="@+id/lst_deliveries"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_rpta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:visibility="gone" />
+
+</LinearLayout>
